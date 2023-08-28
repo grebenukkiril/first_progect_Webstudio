@@ -90,7 +90,6 @@ li{
 }
 
 .entrance{
-    width: 1600px;
     height: 600px;
     margin: 0 auto;
 }
@@ -109,7 +108,7 @@ li{
     display: inline-block;
     background-color: #2196F3;
     padding: 10px 32px;
-    padding: 0 auto;
+    /* padding: 0 auto; */
 }
 
 .advantages_company{
