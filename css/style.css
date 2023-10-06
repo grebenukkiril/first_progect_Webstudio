@@ -88,8 +88,8 @@ ul {
 /* chapter1 */
 
 .chapter1 {
-    background-color: var(--bg-color);
-    width: 100%;
+    background-image: url(../img/chapter1/Imgbg.jpg);
+    background-size: cover;
     height: 600px;
     text-align: center;
     margin-bottom: 8em;
