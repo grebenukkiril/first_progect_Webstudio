@@ -1,0 +1,29 @@
+@import "vars";
+
+.header {
+    padding:25px 0;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu {
+        display: flex;
+        gap: 318px;
+        align-items: center;
+        &__list {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+        }
+        &__link {
+            color: $black-color;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.28px;
+            &:hover{
+                color: $blue-color;
+            }
+        }    
+    }
+}

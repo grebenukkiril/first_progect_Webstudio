@@ -1,0 +1,38 @@
+.chapter2 {
+    margin-bottom: 94px;
+    .main-box {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        &__top-box, &__bottom-box, &__middle-box{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+            font-family: Roboto;
+            .project-box {
+                &:hover{
+                    border: 1px solid $white-border-color;
+                    background: $white-color;
+                    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+                }
+                &__title {
+                    color: $black-color;
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 36px;
+                    letter-spacing: 1.08px;
+                    margin-right: 24px;
+                }
+                &__category {
+                    color: $gray-color;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 30px;
+                    letter-spacing: 0.48px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

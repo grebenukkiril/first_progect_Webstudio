@@ -1,0 +1,8 @@
+@import "base";
+@import "header";
+.main{
+    border-top: 1px solid #ECECEC; 
+   @import "filters";
+   @import "chapter-two";
+}
+@import "footer";
