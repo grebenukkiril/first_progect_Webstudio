@@ -1,3 +1,5 @@
+@import "vars";
+
 .chapter2 {
     margin-bottom: 94px;
     .advantages-box {
@@ -17,12 +19,12 @@
                 height: 120px;
                 flex-shrink: 0;
                 margin-bottom: 30px;
-                background: #F5F4FA;
+                background: $before-after-bg-color;
                 border-radius: 5px;
 
             }
             &:hover::before{
-                background: #e9e7f1;
+                background: $hover-before-after-bg-color;
             }
             &:first-child::before{
                 content: url(../img/chapter2/antenna1.svg);
@@ -45,7 +47,7 @@
         padding-bottom: 10px;
         }
         &__text {
-        color: #757575;
+        color: $gray-color;
         font-size: 14px;
         font-weight: 400;
         line-height: 24px;

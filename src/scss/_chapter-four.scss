@@ -1,3 +1,5 @@
+@import "vars";
+
 .chapter4 {
     margin-bottom: 94px;
     .team-box {
@@ -20,7 +22,7 @@
             margin-bottom: 10px;
           }
           &__position-text {
-            color: #757575;
+            color: $gray-color;
             font-size: 16px;
             font-weight: 400;
             letter-spacing: 0.48px;
@@ -28,7 +30,7 @@
           }
           &__item {
             border-radius: 0px 0px 4px 4px;
-            background: #FFF;
+            background: $white-color;
             box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
             width: 270px;
             height: 428px;

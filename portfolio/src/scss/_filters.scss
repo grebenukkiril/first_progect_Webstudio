@@ -22,12 +22,12 @@
         }
         &__link {
             border-radius: 4px;
-            background: #F5F4FA;
+            background: $filter-bg-color;
             padding: 6px 22px;
             &:hover{
-                color: #FFF;
+                color: $white-color;
                 border-radius: 4px;
-                background: #2196F3;
+                background: $blue-color;
                 box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
             }
         }

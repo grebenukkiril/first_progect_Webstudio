@@ -12,12 +12,12 @@
             font-family: Roboto;
             .project-box {
                 &:hover{
-                    border: 1px solid #EEE;
-                    background: #FFF;
+                    border: 1px solid $white-border-color;
+                    background: $white-color;
                     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
                 }
                 &__title {
-                    color: #212121;
+                    color: $black-color;
                     font-size: 18px;
                     font-weight: 700;
                     line-height: 36px;
@@ -25,7 +25,7 @@
                     margin-right: 24px;
                 }
                 &__category {
-                    color: #757575;
+                    color: $gray-color;
                     font-size: 16px;
                     font-weight: 400;
                     line-height: 30px;

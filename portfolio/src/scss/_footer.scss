@@ -1,3 +1,5 @@
+@import "vars";
+
 .footer {
     background-color: #2F303A;
     .footer-box {
@@ -17,12 +19,12 @@
                     align-items: center;
                     width: 44px;
                     height: 44px;
-                    fill: #AFB1B8;
+                    fill: $color-svg;
                     border-radius: 50px;
                     background-color: rgba(255, 255, 255, 0.10);
                     &:hover{
-                        background-color: #2196F3;
-                        fill: #FFF;
+                        background-color: $blue-color;
+                        fill: $footer-svg-color;
                     }
                 }
                 &__svg {
@@ -49,11 +51,6 @@
                     border: 1px solid rgba(255, 255, 255, 0.30);
                     background: rgba(33, 150, 243, 0.00);
                     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-                    &:focus{
-                        border: 1px solid rgba(255, 255, 255, 0.30);
-                        background: rgba(33, 150, 243, 0.00);
-                        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-                    }
                 }
                 &__button {
                     display: flex;
@@ -63,21 +60,23 @@
                     width: 200px;
                     height: 50px;
                     border-radius: 4px;
-                    background: #2196F3;
+                    background: $blue-btn-color;
                     padding: 10px 28px;
                     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-                    color: #FFF;
-                    fill: #FFF;
+                    color: $white-color;
+                    fill: $footer-svg-color;
                     text-align: center;
                     font-size: 16px;
                     font-weight: 700;
                     line-height: 30px;
                     letter-spacing: 0.96px;
                     &:hover{
-                        background: #0e78ce;
+                        background: $blue-color-btn-hover;
                     }
                 }
             }
         }
     }
 }
+
+
