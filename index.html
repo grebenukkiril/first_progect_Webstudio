@@ -35,7 +35,7 @@
                             </a>
                         </li>
                         <li class="contact-list__contact-elements">
-                            <a class="contact-list__contact-link" href="tel:+38 096 111 11 11">
+                            <a class="contact-list__contact-link" href="tel:+380961111111">
                                 <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16">
                                     <path d="M8.5 0H1.5C0.672848 0 0 0.672848 0 1.5V14.5C0 15.3272 0.672848 16 1.5 16H8.5C9.32715 16 10 15.3272 10 14.5V1.5C10 0.672848 9.32715 0 8.5 0ZM1.5 1H8.5C8.77588 1 9 1.22412 9 1.5V12H1V1.5C1 1.22412 1.22412 1 1.5 1ZM8.5 15H1.5C1.22412 15 1 14.7759 1 14.5V13H9V14.5C9 14.7759 8.77588 15 8.5 15Z"/>
                                     <path d="M2.35355 13.7389C2.54882 13.9213 2.54882 14.2169 2.35355 14.3992C2.15828 14.58161.84172 14.5816 1.64645 14.3992C1.45118 14.2169 1.45118 13.9213 1.64645 13.7389C1.84172 13.5566 2.15828 13.5566 2.35355 13.7389Z"/>
@@ -53,7 +53,7 @@
             <div class="container">
                 <div class="main-box">
                     <h1 class="main-box__title">Ефективні рішення для вашого бізнесу</h1>
-                    <a class="main-box__link" href="#">Замовити послугу</a>
+                    <button class="main-box__btn open-modal">Замовити послугу</button>
                 </div>
             </div>
         </section>
@@ -532,7 +532,7 @@
                                 </a>
                             </li>
                             <li class="contact-list__contact-elements contact-list__contact-elements--footer">
-                                <a class="contact-list__contact-link contact-list__contact-link--footer" href="tel:+38 096 111 11 11">
+                                <a class="contact-list__contact-link contact-list__contact-link--footer" href="tel:+380961111111">
                                     +38 096 111 11 11
                                 </a>
                             </li>
@@ -606,7 +606,7 @@
                 </div>
                 <div class="form-box">
                     <h2 class="title title--footer">Підпишіться на розсилку</h2>
-                    <form class="form" action="">
+                    <form class="form">
                         <label class="form__label" for="input-email">
                             <input type="email" name="input-email" id="input-email" placeholder="E-mail">
                         </label>
@@ -621,5 +621,38 @@
             </div>
         </div>
     </footer>
+    <div id="modal">
+        <div class="modal-header">
+            <h2 class="modal-header__title">Залиште свої дані, ми вам передзвонимо</h2>
+        </div>
+        <div class="modal-body">
+            <form class="modal__form">
+                <label class="modal__form__label" for="modal__form__input-name">
+                    <h6 class="modal__form__label__title">Ім'я</h6>
+                    <input type="text" id="modal__form__input-name">
+                </label>
+                <label class="modal__form__label" for="modal__form__input-phone">
+                    <h6 class="modal__form__label__title">Телефон</h6>
+                    <input type="tel" id="modal__form__input-phone">
+                </label>
+                <label class="modal__form__label" for="modal__form__input-email">
+                    <h6 class="modal__form__label__title">Пошта</h6>
+                    <input type="email" id="modal__form__input-email">
+                </label>
+                <label class="modal__form__label" for="modal__form__input-comment">
+                    <h6 class="modal__form__label__title">Коментар</h6>
+                    <input type="tel" id="modal__form__input-comment">
+                </label>
+                <label for="checkbox-modal">
+                    <input type="checkbox" name="checkbox-modal" id="checkbox-modal">
+                    <p class="checkbox-modal__text">Погоджуюся з розсилкою та приймаю</p>
+                    <a class="checkbox-modal" href="#">Умови договору</a>
+                </label>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button id="close-modal">Відправити</button>
+        </div>
+    </div>
 </body>
 </html>
