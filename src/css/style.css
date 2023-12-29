@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6, li, menu, p {
 button {
   margin: 0;
   padding: 0;
-  color: #000;
+  color: #FFF;
   border: none;
 }
 
@@ -138,7 +138,7 @@ button {
 }
 
 .main .chapter1 {
-  background-image: url(../img/chapter1/imgbg.jpg);
+  background-image: url(../img/chapter1-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 600px;
@@ -159,6 +159,8 @@ button {
   margin-bottom: 30px;
 }
 .main .chapter1 .main-box__btn {
+  text-align: center;
+  font-family: Roboto;
   font-size: 16px;
   font-weight: 700;
   line-height: 30px;
@@ -169,7 +171,7 @@ button {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .main .chapter1 .main-box__btn:hover {
-  padding: 12px 34px;
+  padding: 10px 34px;
   background: #0e78ce;
 }
 .main .chapter2 {

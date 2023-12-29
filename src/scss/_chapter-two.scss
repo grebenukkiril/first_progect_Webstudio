@@ -27,16 +27,16 @@
                 background: $hover-before-after-bg-color;
             }
             &:first-child::before{
-                content: url(../img/chapter2/antenna1.svg);
+                content: url(../../icomoon/SVG/antenna.svg);
             }
             &:nth-child(2)::before{
-                content: url(../img/chapter2/clock1.svg);
+                content: url(../../icomoon/SVG/clock.svg);
             }
             &:nth-child(3)::before{
-                content: url(../img/chapter2/diagram1.svg);
+                content: url(../../icomoon/SVG/diagram.svg);
             }
             &:last-child::before{
-                content: url(../img/chapter2/astronaut1.svg);
+                content: url(../../icomoon/SVG/astronaut.svg);
             }
         }
         &__title {
