@@ -1,0 +1,98 @@
+@import "../utils/mixin";
+@import "../utils/paceholder";
+.footer {
+    padding: 60px 215px;
+    background: rgb(47, 48, 58);
+    &__inner {
+        @include displayFlex ($gap: 0, $alignItems: center, $justifiContent: space-between, $flexDirection: row);
+    }
+    &__info-box {
+        @include displayFlex ($gap: 20px, $alignItems: flex-start, $justifiContent: center, $flexDirection: column);
+        .logo--white {
+            color: rgb(255, 255, 255);
+        }
+        .contact {
+            @include displayFlex ($gap: 9px, $alignItems: flex-start, $justifiContent: center, $flexDirection: column);
+            &__link {
+                color: rgba(255, 255, 255, 0.6);
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 3%;
+                text-align: left;
+                transition: all 600ms;
+                &:hover{
+                    color: rgb(255, 255, 255);
+                    transform: translateX(15px);
+                }
+            }
+        }
+    }
+    .social-links {
+        @include displayFlex ($gap: 0, $alignItems: flex-start, $justifiContent: center, $flexDirection: column);
+        &__list {
+            @include displayFlex ($gap: 10px, $alignItems: center, $justifiContent: center, $flexDirection: row);
+        }
+        &__item {
+            border-radius: 100%;
+            overflow: hidden;
+        }
+        &__link{
+            @include displayFlex ($alignItems: center, $justifiContent: center, $flexDirection: row);
+            padding: 12px;
+            background: rgba(255, 255, 255, 0.1);
+            fill: #FFFFFF;
+            width: 100%;
+            height: 100%;
+            transition: all 400ms;
+            &:hover{
+                background: rgb(33, 150, 243);
+            }
+        }
+    }
+    .form {
+        &__item-box {
+            @include displayFlex ($gap: 12px, $alignItems: center, $justifiContent: center, $flexDirection: row);
+        }
+        &__input {
+            box-sizing: border-box;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+            background: rgba(33, 150, 243, 0);
+            padding: 15px 16px;
+            width: 358px;
+            transition: all 600ms;
+            &::placeholder{
+                color: rgba(255, 255, 255, 0.6);
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 3%;
+                text-align: left;
+            }
+            &:focus{
+                outline: none;
+                border-color: rgba(129, 198, 255, 0.356);
+            }
+        }
+        &__btn {
+            @include displayFlex ($gap: 10px, $alignItems: center, $justifiContent: center, $flexDirection: row);
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 30px;
+            letter-spacing: 6%;
+            text-align: center;
+            border-radius: 4px;
+            color: rgb(255, 255, 255);
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+            background-color: rgb(33, 150, 243);
+            fill: #FFFFFF;
+            padding: 10px 28px;
+            transition: all 600ms;
+            &:hover{
+                background-color: rgb(7, 127, 224);
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+body{
+    font-family: Roboto;
+    color: #000;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6, li, menu, p {
+    margin: 0;
+    padding: 0;
+}
+button{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    border: none;
+}
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.logo {
+    color: #000;
+    font-family: Raleway;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+}
+.logo--blue {
+    color: #2196F3;
+}

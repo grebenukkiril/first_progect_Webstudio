@@ -1,0 +1,73 @@
+@import "../utils/mixin";
+.header {
+    &__inner {
+        @include displayFlex ($gap: 0, $alignItems: center, $justifiContent: space-between, $flexDirection: row );
+        font-size: 14px;
+        .menu {
+            @include displayFlex ($gap: 93px, $alignItems: center, $justifiContent: center, $flexDirection: row );
+            &__list {
+                @include displayFlex ($gap: 50px, $alignItems: center, $justifiContent: center, $flexDirection: row );
+                color: #212121;
+            }
+            &__item {
+                @include displayFlex ($gap: 0px, $alignItems: center, $justifiContent: center, $flexDirection: row );
+                padding: 32px 0;
+                overflow: hidden;
+                position: relative;
+                transition:all 700ms;
+                &::after{
+                    content:"";
+                    position: absolute;
+                    width: 100%;
+                    height: 4px;
+                    border-radius: 2px;
+                    background-color: #2196F3;
+                    left: 0;
+                    bottom: -100%;
+                    transition: bottom 400ms;
+                }
+                &:hover{
+                    color: #2196F3;
+                    &::after{
+                        bottom: 0;
+                    }
+                }
+                &--main{
+                    color: #2196F3;
+                    &::after{
+                        bottom: 0;
+                    }
+                }
+                    
+            }
+            &__link {
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 0.28px;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .contact {
+            @include displayFlex ($gap: 30px, $alignItems: center, $justifiContent: center, $flexDirection: row );
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            &__link {
+                @include displayFlex ($gap: 10px, $alignItems: center, $justifiContent: center, $flexDirection: row );
+                color: #757575;
+                fill: #757575;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 0.28px;
+                transition:all 700ms;
+                &:hover{
+                    color: #2196F3;
+                    fill: #2196F3;
+                }
+            }
+        }
+    }
+}

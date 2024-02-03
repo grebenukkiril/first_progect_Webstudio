@@ -1,0 +1,38 @@
+@import "../utils/mixin";
+@each $titleSection in service, team, clients{
+    .#{$titleSection}__title{
+        color: rgb(33, 33, 33);
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 42px;
+        letter-spacing: 3%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}
+
+@each $displaySection in service, team, clients{
+    .#{$displaySection}__box{
+        @include displayFlex ($gap: 0, $alignItems: center, $justifiContent: space-between, $flexDirection: column);
+    }
+}
+
+@each $contentBox in service, team{
+    .#{$contentBox}__content-box{
+        @include displayFlex ($gap: 30px, $alignItems: center, $flexDirection: row);
+        margin-bottom:188px ;
+    }    
+}
+
+@each $footerTitle in social-links, form{
+    .#{$footerTitle}__title{
+        color: rgb(255, 255, 255);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16px;
+        letter-spacing: 3%;
+        text-align: left;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,46 @@
+@import "../utils/mixin";
+.advantages {
+    color: #757575;
+    margin: 94px 0;
+    &__box {
+        .advantages-list {
+            @include displayFlex ($gap: 30px, $alignItems: flex-start, $justifiContent: center);
+            &__item {
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 0.42px;
+                @include displayFlex ($gap: 10px, $alignItems:  flex-start, $justifiContent: center);
+                flex-direction: column;
+                &::before{
+                    content: url(../icomoon/SVG/antenna.svg);
+                    padding: 25px 100px;
+                    border-radius: 4px;
+                    background-color: #F5F4FA;
+                    margin-bottom: 30px;
+                    transition: all 600ms;
+                }
+                &:hover::before{
+                    background-color: #e3deff;
+                }
+                &:nth-child(2)::before{
+                    content: url(../icomoon/SVG/clock.svg);
+                }
+                &:nth-child(3)::before{
+                    content: url(../icomoon/SVG/diagram.svg);
+                }
+                &:nth-child(4)::before{
+                    content: url(../icomoon/SVG/astronaut.svg);
+                }
+            }
+            &__name {
+                color: #212121;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 0.42px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
