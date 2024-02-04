@@ -50,7 +50,7 @@
         <section class="first">
             <div class="first__box container">
                 <h1 class="first__title">Ефективні рішення для вашого бізнесу</h1>
-                <button class="first__btn modal-btn">Замовити послугу</button>
+                <button class="first__btn">Замовити послугу</button>
             </div>
         </section>
         <section class="advantages">
@@ -440,7 +440,7 @@
                 <legend class="form__title">Підпишіться на розсилку</legend>
                 <label class="form__item-box" for="form__input">
                     <input class="form__input" type="text" placeholder="E-mail">
-                    <button class="form__btn" type="submit">
+                    <button class="form__btn"type="submit">
                         Підписатися
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                             <title>iconSend</title>
@@ -451,5 +451,43 @@
             </form>
         </div>
     </footer>
+    <button class="btn-open" data-open-modal>Відкрити модалку</a></button>
+    <div class="backdrop is-hidden">
+        <div class="modal">
+            <button class="modal__close-btn" data-close-modal>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <title>close-black</title>
+                <path d="M13.333 4.54l-0.985-0.985-3.904 3.904-3.904-3.904-0.985 0.985 3.904 3.904-3.904 3.904 0.985 0.985 3.904-3.904 3.904 3.904 0.985-0.985-3.904-3.904 3.904-3.904z"></path>
+            </svg>
+            </button>
+            <form class="modal-form">
+            <legend class="modal-form__title">
+                Залиште свої дані, ми вам передзвонимо
+            </legend>
+            <label class="user-name" for="user-name__input">
+                <p class="modal-form__description">Ім'я</p>
+                <input class="modal-form__input" id="user-name__input" type="text">
+            </label>
+            <label class="user-phone" for="user-phone__input">
+                <p class="modal-form__description">Телефон</p>
+                <input class="modal-form__input" id="user-phone__input" type="tel">
+            </label>
+            <label class="user-email" for="user-email__input">
+                <p class="modal-form__description">Пошта</p>
+                <input class="modal-form__input" id="user-email__input" type="email">
+            </label>
+            <label class="user-comment" for="user-comment__input">
+                <p class="modal-form__description">Коментар</p>
+                <input class="modal-form__input" id="user-comment__input" type="text" placeholder="Введіть текст">
+            </label>
+            <label class="user-checkbox" for="checkbox__input">
+                <input class="modal-form__input" id="user-comment__input" type="checkbox">
+                <p class="user-checkbox__description">Погоджуюся з розсилкою та приймаю <a class="user-checkbox__description-link" href="#"> Умови договору</a></p>
+            </label>
+            <button class="modal-form__btn" type="submit">Відправити</button>
+            </form>
+        </div>
+    </div>
+    <script src="./src/js/modal.js"></script>
 </body>
 </html>
