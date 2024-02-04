@@ -451,56 +451,55 @@
             </form>
         </div>
     </footer>
-    <button class="btn-open" data-open-modal>Відкрити модалку</a>
-        <div class="backdrop is-hidden" data-modal>
-          <div class="modal">
-              <button class="btn" data-close-modal>
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                    <title>close-black</title>
-                    <path d="M13.333 4.54l-0.985-0.985-3.904 3.904-3.904-3.904-0.985 0.985 3.904 3.904-3.904 3.904 0.985 0.985 3.904-3.904 3.904 3.904 0.985-0.985-3.904-3.904 3.904-3.904z"></path>
-                </svg>
-              </button>
-              <h3 class="modal__title">Залиште свої дані, ми вам передзвонимо</h3>
-              <form class="modal-form">
-                <div class="form-item">
-                    <label class="user-name" for="user-name__input">
-                        <input class="modal-form__input" id="user-name__input" type="text">
-                    </label>
-                    <p class="modal-form__description">Ім'я</p>
-                </div>
+    <button class="btn-open" data-open-modal>Відкрити модалку</button>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="btn" data-close-modal>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <title>close-black</title>
+                <path d="M13.333 4.54l-0.985-0.985-3.904 3.904-3.904-3.904-0.985 0.985 3.904 3.904-3.904 3.904 0.985 0.985 3.904-3.904 3.904 3.904 0.985-0.985-3.904-3.904 3.904-3.904z"></path>
+            </svg>
+            </button>
+            <h3 class="modal__title">Залиште свої дані, ми вам передзвонимо</h3>
+            <form class="modal-form">
+            <div class="form-item">
+                <label class="user-name" for="user-name__input">
+                    <input class="modal-form__input" id="user-name__input" type="text">
+                </label>
+                <p class="modal-form__description">Ім'я</p>
+            </div>
 
-                <div class="form-item">
-                    <label class="user-phone" for="user-phone__input">
-                        <input class="modal-form__input" id="user-phone__input" type="tel">
-                    </label>
-                    <p class="modal-form__description">Телефон</p>
-                </div>
+            <div class="form-item">
+                <label class="user-phone" for="user-phone__input">
+                    <input class="modal-form__input" id="user-phone__input" type="tel">
+                </label>
+                <p class="modal-form__description">Телефон</p>
+            </div>
 
-                <div class="form-item">
-                    <label class="user-nemail" for="user-email__input">
-                        <input class="modal-form__input" id="user-email__input" type="email">
-                    </label>
-                    <p class="modal-form__description">Пошта</p>
-                </div>
+            <div class="form-item">
+                <label class="user-nemail" for="user-email__input">
+                    <input class="modal-form__input" id="user-email__input" type="email">
+                </label>
+                <p class="modal-form__description">Пошта</p>
+            </div>
 
-                <div class="form-item">
-                    <label class="user-comment" for="user-comment__input">
-                        <input class="modal-form__input" id="user-comment__input" type="text" placeholder="Введіть текст">
-                    </label>
-                    <p class="modal-form__description">Коментар</p>
-                </div>
+            <div class="form-item">
+                <label class="user-comment" for="user-comment__input">
+                    <input class="modal-form__input" id="user-comment__input" type="text" placeholder="Введіть текст">
+                </label>
+                <p class="modal-form__description">Коментар</p>
+            </div>
 
-                <div class="form-item">
-                    <label class="user-checkbox" for="user-checkbox__input">
-                        <input class="modal-form__input" id="user-checkbox__input" type="checkbox">
-                    </label>
-                    <p class="modal-form__description">Погоджуюся з розсилкою та приймаю <a class="modal-form__description-link" href="#"> Умови договору</a></p>
-                </div>
-                <button class="modal-form" type="submit">Відправити</button>
-              </form>
-          </div>
+            <div class="form-item">
+                <label class="user-checkbox" for="user-checkbox__input">
+                    <input class="modal-form__input" id="user-checkbox__input" type="checkbox">
+                </label>
+                <p class="modal-form__description">Погоджуюся з розсилкою та приймаю <a class="modal-form__description-link" href="#"> Умови договору</a></p>
+            </div>
+            <button class="modal-form" type="submit">Відправити</button>
+            </form>
         </div>
-      </div>
+    </div>
     <script src="./src/js/modal.js"></script>
 </body>
 </html>
