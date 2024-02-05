@@ -1,10 +1,8 @@
 @import "../utils/mixin";
 
 .no-scroll {
-  overflow: hidden;
+  overflow: hidden
 }
-
-
 .backdrop {
   position: fixed;
   width: 100%;
