@@ -50,7 +50,7 @@
         <section class="first">
             <div class="first__box container">
                 <h1 class="first__title">Ефективні рішення для вашого бізнесу</h1>
-                <button class="first__btn">Замовити послугу</button>
+                <button class="first__btn" data-open-modal>Замовити послугу</button>
             </div>
         </section>
         <section class="advantages">
@@ -451,10 +451,9 @@
             </form>
         </div>
     </footer>
-    <button class="btn-open" data-open-modal>Відкрити модалку</button>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button class="btn" data-close-modal>
+            <button class="modal__close-btn" data-close-modal>
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                 <title>close-black</title>
                 <path d="M13.333 4.54l-0.985-0.985-3.904 3.904-3.904-3.904-0.985 0.985 3.904 3.904-3.904 3.904 0.985 0.985 3.904-3.904 3.904 3.904 0.985-0.985-3.904-3.904 3.904-3.904z"></path>
@@ -462,41 +461,23 @@
             </button>
             <h3 class="modal__title">Залиште свої дані, ми вам передзвонимо</h3>
             <form class="modal-form">
-            <div class="form-item">
-                <label class="user-name" for="user-name__input">
-                    <input class="modal-form__input" id="user-name__input" type="text">
-                </label>
-                <p class="modal-form__description">Ім'я</p>
-            </div>
+                <label class="modal-form__description" for="user-name__input">Ім'я</label>
+                <input class="modal-form__input" id="user-name__input" type="text">
 
-            <div class="form-item">
-                <label class="user-phone" for="user-phone__input">
-                    <input class="modal-form__input" id="user-phone__input" type="tel">
-                </label>
-                <p class="modal-form__description">Телефон</p>
-            </div>
+                <label class="modal-form__description" for="user-phone__input">Телефон</label>
+                <input class="modal-form__input" id="user-phone__input" type="tel">
 
-            <div class="form-item">
-                <label class="user-nemail" for="user-email__input">
-                    <input class="modal-form__input" id="user-email__input" type="email">
-                </label>
-                <p class="modal-form__description">Пошта</p>
-            </div>
+                <label class="modal-form__description" for="user-email__input">Пошта</label>
+                <input class="modal-form__input" id="user-email__input" type="email">
 
-            <div class="form-item">
-                <label class="user-comment" for="user-comment__input">
-                    <input class="modal-form__input" id="user-comment__input" type="text" placeholder="Введіть текст">
-                </label>
-                <p class="modal-form__description">Коментар</p>
-            </div>
+                <label class="modal-form__description" for="user-comment__input">Коментар</label>
+                <input class="modal-form__input" id="user-comment__input" type="text" placeholder="Введіть текст">
 
-            <div class="form-item">
-                <label class="user-checkbox" for="user-checkbox__input">
+                <div class="checkbox-wrapper">
                     <input class="modal-form__input" id="user-checkbox__input" type="checkbox">
-                </label>
-                <p class="modal-form__description">Погоджуюся з розсилкою та приймаю <a class="modal-form__description-link" href="#"> Умови договору</a></p>
-            </div>
-            <button class="modal-form" type="submit">Відправити</button>
+                    <label class="modal-form__description modal-form__description--checkbox" for="user-comment__input">Погоджуюся з розсилкою та приймаю<a class="modal-form__description-link" href="#"> Умови договору</a></label>
+                </div>
+            <button class="modal-form__btn" type="submit">Відправити</button>
             </form>
         </div>
     </div>
