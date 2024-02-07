@@ -15,7 +15,8 @@
                 flex-direction: column;
                 &::before{
                     content: url(../icomoon/SVG/antenna.svg);
-                    padding: 25px 100px;
+                    @include displayFlex ($gap: 0, $alignItems: center, $justifiContent: center, $flexDirection: row);
+                    padding: 25px 0;
                     border-radius: 4px;
                     background-color: #F5F4FA;
                     margin-bottom: 30px;
@@ -41,6 +42,23 @@
                 letter-spacing: 0.42px;
                 text-transform: uppercase;
             }
+        }
+    }
+}
+@media (max-width:768px){
+    .container{
+        width: 768px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    .advantages-list{
+        flex-wrap: wrap;
+        @include displayFlex ($gap: 30px, $alignItems: center, $justifiContent: center, $flexDirection: row);
+    }
+    .advantages-list__item{
+        width: 354px;
+        &::before{
+            width: 100%;
         }
     }
 }

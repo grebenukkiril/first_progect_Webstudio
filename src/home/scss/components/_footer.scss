@@ -1,10 +1,11 @@
 @import "../utils/mixin";
 @import "../utils/paceholder";
 .footer {
-    padding: 60px 215px;
+    padding: 60px 0;
     background: rgb(47, 48, 58);
     &__inner {
         @include displayFlex ($gap: 0, $alignItems: center, $justifiContent: space-between, $flexDirection: row);
+        margin: 0 auto;
     }
     &__info-box {
         @include displayFlex ($gap: 20px, $alignItems: flex-start, $justifiContent: center, $flexDirection: column);
@@ -51,8 +52,9 @@
         }
     }
     .form {
-        &__item-box {
+        &__item-box-wrapper {
             @include displayFlex ($gap: 12px, $alignItems: center, $justifiContent: center, $flexDirection: row);
+            margin-top: 20px;
         }
         &__input {
             box-sizing: border-box;
@@ -94,12 +96,39 @@
                 background-color: rgb(7, 127, 224);
             }
         }
+    }   
+}
+@media (max-width:768px){
+    .container{
+        width: 768px;
+        margin: 0 auto;
+        padding: 0 15px;
     }
-    .form {
-        &__title {}
-        &__item-box {}
-        &__input {}
-        &__btn {}
-  }
-  
+    .footer {
+        width: 100%;
+        padding: 60px 0;
+        &__inner {
+            @include displayFlex ($gap: 165px, $alignItems: center, $justifiContent: center, $flexDirection: row);
+            flex-wrap: wrap;
+        }
+        &__info-box{
+            @include displayFlex ($gap: 0, $alignItems: center, $justifiContent: center, $flexDirection: column);
+            .contact{
+                @include displayFlex ($gap: 0, $alignItems: center, $justifiContent: center, $flexDirection: column);
+            }
+        }
+        .social-links {
+            @include displayFlex ($gap: 0, $alignItems: center, $justifiContent: center, $flexDirection: column);
+            &__list {
+                @include displayFlex ($gap: 10px, $alignItems: center, $justifiContent: center, $flexDirection: row);
+            }
+        }  
+        .form {
+            @include displayFlex ($gap: 0, $alignItems: center, $justifiContent: center, $flexDirection: column);
+            &__item-box-wrapper {
+                @include displayFlex ($gap: 20px, $alignItems: center, $justifiContent: center, $flexDirection: column);
+                margin: 0;
+            }
+      }        
+    }
 }

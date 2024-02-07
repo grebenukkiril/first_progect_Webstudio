@@ -45,4 +45,22 @@
         }
     }
 }
-
+@media (max-width:768px){
+    .container{
+        width: 768px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    .team__content-box{
+        flex-wrap: wrap;
+        @include displayFlex ($gap: 30px, $alignItems: center, $justifiContent: center, $flexDirection: row);
+        margin-bottom: 120px;
+    }
+    .team__img{
+        width: 354px;
+        height: 374px;
+    }
+    .team__title{
+        margin-bottom: 30px;
+    }
+}

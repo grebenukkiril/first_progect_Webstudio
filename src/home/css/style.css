@@ -28,7 +28,7 @@ button {
 }
 
 .container {
-  max-width: 1200px;
+  width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -124,8 +124,6 @@ button {
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
-  letter-spacing: 3%;
-  text-align: left;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -135,8 +133,6 @@ button {
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
-  letter-spacing: 3%;
-  text-align: left;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -257,9 +253,6 @@ button {
   justify-content: center;
   gap: 30px;
   flex-direction: row;
-  display: flex;
-  align-items: center;
-  gap: 30px;
 }
 .header__inner .contact__link {
   display: flex;
@@ -280,6 +273,53 @@ button {
   fill: #2196F3;
 }
 
+@media (max-width: 768px) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 96px;
+    flex-direction: row;
+  }
+  .header__inner .contact {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .header__inner .contact__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-direction: row;
+    font-size: 12px;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 88px;
+    flex-direction: row;
+  }
+  .logo {
+    font-size: 24px;
+  }
+  .menu__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 51px;
+    flex-direction: row;
+  }
+}
 .service__item, .first {
   background-repeat: no-repeat;
   background-size: cover;
@@ -353,7 +393,12 @@ button {
 }
 .advantages__box .advantages-list__item::before {
   content: url(../icomoon/SVG/antenna.svg);
-  padding: 25px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  flex-direction: row;
+  padding: 25px 0;
   border-radius: 4px;
   background-color: #F5F4FA;
   margin-bottom: 30px;
@@ -379,6 +424,27 @@ button {
   text-transform: uppercase;
 }
 
+@media (max-width: 768px) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .advantages-list {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: row;
+  }
+  .advantages-list__item {
+    width: 354px;
+  }
+  .advantages-list__item::before {
+    width: 100%;
+  }
+}
 .service__item, .first {
   background-repeat: no-repeat;
   background-size: cover;
@@ -434,6 +500,16 @@ button {
   content: "Дизайнерські рішення";
 }
 
+@media (max-width: 768px) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .service {
+    display: none;
+  }
+}
 .first, .service__item {
   background-repeat: no-repeat;
   background-size: cover;
@@ -502,6 +578,29 @@ button {
   background-color: #2196F3;
 }
 
+@media (max-width: 768px) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .team__content-box {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: row;
+    margin-bottom: 120px;
+  }
+  .team__img {
+    width: 354px;
+    height: 374px;
+  }
+  .team__title {
+    margin-bottom: 30px;
+  }
+}
 .first, .service__item {
   background-repeat: no-repeat;
   background-size: cover;
@@ -553,6 +652,21 @@ button {
   fill: inherit;
 }
 
+@media (max-width: 768px) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .clients-list {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+  }
+}
 .first, .service__item {
   background-repeat: no-repeat;
   background-size: cover;
@@ -566,7 +680,7 @@ button {
 }
 
 .footer {
-  padding: 60px 215px;
+  padding: 60px 0;
   background: rgb(47, 48, 58);
 }
 .footer__inner {
@@ -575,6 +689,7 @@ button {
   justify-content: space-between;
   gap: 0;
   flex-direction: row;
+  margin: 0 auto;
 }
 .footer__info-box {
   display: flex;
@@ -640,12 +755,13 @@ button {
 .footer .social-links__link:hover {
   background: rgb(33, 150, 243);
 }
-.footer .form__item-box {
+.footer .form__item-box-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 12px;
   flex-direction: row;
+  margin-top: 20px;
 }
 .footer .form__input {
   box-sizing: border-box;
@@ -699,6 +815,69 @@ button {
 .footer .form__btn:hover {
   background-color: rgb(7, 127, 224);
 }
+
+@media (max-width: 768px) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .footer {
+    width: 100%;
+    padding: 60px 0;
+  }
+  .footer__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 165px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .footer__info-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    flex-direction: column;
+  }
+  .footer__info-box .contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    flex-direction: column;
+  }
+  .footer .social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    flex-direction: column;
+  }
+  .footer .social-links__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: row;
+  }
+  .footer .form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    flex-direction: column;
+  }
+  .footer .form__item-box-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    margin: 0;
+  }
+}
 .no-scroll {
   overflow: hidden;
 }
@@ -707,7 +886,7 @@ button {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.349);
+  background-color: rgba(0, 0, 0, 0.432);
   top: 0;
   left: 0;
   display: flex;
@@ -836,4 +1015,18 @@ button {
 }
 .backdrop #user-phone__input:focus {
   background-image: url(../icomoon/SVG/phone-black-hover.svg);
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .modal {
+    margin: 450px;
+  }
+  .modal .modal-form__input {
+    padding: 12px 42px;
+  }
 }

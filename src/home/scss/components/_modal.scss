@@ -7,7 +7,7 @@
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.349);
+  background-color: rgba(0, 0, 0, 0.432);
   top: 0;
   left: 0;
   @include displayFlex ($gap: 0, $alignItems: center, $justifiContent: center, $flexDirection: column );
@@ -114,6 +114,21 @@
     background-image: url(../icomoon/SVG/phone-black.svg);
     &:focus{
       background-image: url(../icomoon/SVG/phone-black-hover.svg);
+    }
+  }
+}
+@media (max-width:768px){
+  .container{
+      width: 768px;
+      margin: 0 auto;
+      padding: 0 15px;
+  }
+  .modal{
+    margin: 450px;
+    .modal-form{
+      &__input{
+        padding: 12px 42px;
+      }
     }
   }
 }
