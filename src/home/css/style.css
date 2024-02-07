@@ -276,7 +276,6 @@ button {
 @media (max-width: 768px) {
   .container {
     width: 768px;
-    margin: 0 auto;
     padding: 0 15px;
   }
   .header__inner {
@@ -503,7 +502,6 @@ button {
 @media (max-width: 768px) {
   .container {
     width: 768px;
-    margin: 0 auto;
     padding: 0 15px;
   }
   .service {
@@ -581,7 +579,6 @@ button {
 @media (max-width: 768px) {
   .container {
     width: 768px;
-    margin: 0 auto;
     padding: 0 15px;
   }
   .team__content-box {
@@ -655,7 +652,6 @@ button {
 @media (max-width: 768px) {
   .container {
     width: 768px;
-    margin: 0 auto;
     padding: 0 15px;
   }
   .clients-list {
@@ -819,7 +815,6 @@ button {
 @media (max-width: 768px) {
   .container {
     width: 768px;
-    margin: 0 auto;
     padding: 0 15px;
   }
   .footer {
@@ -1020,7 +1015,6 @@ button {
 @media (max-width: 768px) {
   .container {
     width: 768px;
-    margin: 0 auto;
     padding: 0 15px;
   }
   .modal {
