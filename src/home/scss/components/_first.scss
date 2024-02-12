@@ -31,4 +31,18 @@
             background-color: #188CE8;
         }
     }
+
+}
+@media (max-width: 480px){
+    .container{
+        width: 450px;
+        
+    }
+    .first__title{
+        font-size: 26px;
+        font-weight: 900;
+        line-height: 42px;
+        letter-spacing: 1.56px;
+        width: 360px;
+    }
 }

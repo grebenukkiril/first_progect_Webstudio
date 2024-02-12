@@ -277,7 +277,6 @@ button {
 @media (max-width: 768px) {
   .container {
     width: 768px;
-    padding: 0 15px;
   }
   .header__inner {
     gap: 96px;
@@ -349,6 +348,18 @@ button {
   background-color: #188CE8;
 }
 
+@media (max-width: 480px) {
+  .container {
+    width: 450px;
+  }
+  .first__title {
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 42px;
+    letter-spacing: 1.56px;
+    width: 360px;
+  }
+}
 .advantages {
   color: #757575;
   margin: 94px 0;
@@ -614,6 +625,11 @@ button {
     gap: 10px;
   }
 }
+@media (max-width: 480px) {
+  .clients {
+    margin-bottom: 60px;
+  }
+}
 .first, .service__item {
   background-repeat: no-repeat;
   background-size: cover;
@@ -800,6 +816,11 @@ button {
   }
   .footer .form__title {
     text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .footer__inner {
+    gap: 60px;
   }
 }
 .no-scroll {
