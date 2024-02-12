@@ -21,6 +21,7 @@
                     background-color: #F5F4FA;
                     margin-bottom: 30px;
                     transition: all 600ms;
+                    width: 100%;
                 }
                 &:hover::before{
                     background-color: #e3deff;
@@ -46,19 +47,10 @@
     }
 }
 @media (max-width:768px){
-    .container{
-        width: 768px;
-        margin: 0 auto;
-        padding: 0 15px;
-    }
     .advantages-list{
         flex-wrap: wrap;
-        @include displayFlex ($gap: 30px, $alignItems: center, $justifiContent: center, $flexDirection: row);
     }
     .advantages-list__item{
         width: 354px;
-        &::before{
-            width: 100%;
-        }
     }
 }

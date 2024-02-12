@@ -46,13 +46,8 @@
     }
 }
 @media (max-width:768px){
-    .container{
-        width: 768px;
-        padding: 0 15px;
-    }
     .team__content-box{
         flex-wrap: wrap;
-        @include displayFlex ($gap: 30px, $alignItems: center, $justifiContent: center, $flexDirection: row);
         margin-bottom: 120px;
     }
     .team__img{

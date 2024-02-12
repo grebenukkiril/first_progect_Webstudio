@@ -5,6 +5,7 @@
     background: rgb(47, 48, 58);
     &__inner {
         @include displayFlex ($gap: 0, $alignItems: center, $justifiContent: space-between, $flexDirection: row);
+        flex-wrap: wrap;
         margin: 0 auto;
     }
     &__info-box {
@@ -99,34 +100,35 @@
     }   
 }
 @media (max-width:768px){
-    .container{
-        width: 768px;
-        padding: 0 15px;
-    }
     .footer {
         width: 100%;
-        padding: 60px 0;
         &__inner {
-            @include displayFlex ($gap: 165px, $alignItems: center, $justifiContent: center, $flexDirection: row);
+            gap: 165px;
+            justify-content: center;
             flex-wrap: wrap;
         }
         &__info-box{
-            @include displayFlex ($gap: 0, $alignItems: center, $justifiContent: center, $flexDirection: column);
+            gap: 0;
+            align-items: center;
             .contact{
-                @include displayFlex ($gap: 0, $alignItems: center, $justifiContent: center, $flexDirection: column);
+                gap: 0;
+                align-items: center;
             }
         }
         .social-links {
-            @include displayFlex ($gap: 0, $alignItems: center, $justifiContent: center, $flexDirection: column);
-            &__list {
-                @include displayFlex ($gap: 10px, $alignItems: center, $justifiContent: center, $flexDirection: row);
-            }
+            align-items: center;
         }  
         .form {
-            @include displayFlex ($gap: 0, $alignItems: center, $justifiContent: center, $flexDirection: column);
+            gap: 12px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
             &__item-box-wrapper {
                 @include displayFlex ($gap: 20px, $alignItems: center, $justifiContent: center, $flexDirection: column);
                 margin: 0;
+            }
+            &__title{
+                text-align: center;
             }
       }        
     }

@@ -3,6 +3,7 @@
 .clients {
     margin-bottom: 94px;
     .clients-list {
+        flex-wrap: wrap;
         @include displayFlex ($gap: 30px, $alignItems: center, $flexDirection: row);
         &__item {
             @include displayFlex ($gap: 0, $alignItems: center, $flexDirection: row);
@@ -27,12 +28,8 @@
     }
 }
 @media (max-width:768px){
-    .container{
-        width: 768px;
-        padding: 0 15px;
-    }
     .clients-list{
-        flex-wrap: wrap;
-        @include displayFlex ($gap: 10px, $alignItems: center, $justifiContent: center, $flexDirection: column );
+        flex-direction: column;
+        gap: 10px;
     }
 }

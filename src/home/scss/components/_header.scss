@@ -51,6 +51,7 @@
         }
         .contact {
             @include displayFlex ($gap: 30px, $alignItems: center, $justifiContent: center, $flexDirection: row );
+            flex-wrap: wrap;
             &__link {
                 @include displayFlex ($gap: 10px, $alignItems: center, $justifiContent: center, $flexDirection: row );
                 color: #757575;
@@ -73,25 +74,26 @@
         width: 768px;
         padding: 0 15px;
     }
-
     .header__inner{
-        @include displayFlex ($gap: 96px, $alignItems: center, $justifiContent: center, $flexDirection: row );
+        gap: 96px;
+        justify-content: center;
         .contact {
-            flex-wrap: wrap;
-            @include displayFlex ($gap: 10px, $alignItems: flex-start, $justifiContent: center, $flexDirection: column );
+            gap: 10px;
+            align-items: flex-start;
+            flex-direction: column;
             &__link {
-                @include displayFlex ($gap: 8px, $alignItems: center, $justifiContent: center, $flexDirection: row );
+                gap: 8px;
                 font-size: 12px;
             }
         }
     }
     .menu{
-        @include displayFlex ($gap: 88px, $alignItems: center, $justifiContent: center, $flexDirection: row );
+        gap: 88px;
     }
     .logo{
         font-size: 24px;
     }
     .menu__list{
-         @include displayFlex ($gap: 51px, $alignItems: center, $justifiContent: center, $flexDirection: row );
+        gap: 51px;
     }
 }
