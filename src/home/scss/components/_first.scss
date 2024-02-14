@@ -33,10 +33,15 @@
     }
 
 }
-@media (max-width: 480px){
-    .container{
-        width: 450px;
-        
+@media (max-width: 768px){
+    .first{
+        padding: 180px 0;
+        &__btn{
+            margin: 0;
+        }
+        &__title{
+            margin: 0;
+        }
     }
     .first__title{
         font-size: 26px;
@@ -44,5 +49,11 @@
         line-height: 42px;
         letter-spacing: 1.56px;
         width: 360px;
+    }
+}
+@media (max-width:480px){
+    .first__title{
+        font-size: 22px;
+        width: 320px;
     }
 }

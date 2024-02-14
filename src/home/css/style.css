@@ -274,7 +274,7 @@ button {
   fill: #2196F3;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1112px) {
   .container {
     width: 768px;
   }
@@ -299,6 +299,36 @@ button {
   }
   .menu__list {
     gap: 51px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 480px;
+  }
+  .header {
+    padding: 16px 0;
+  }
+  .header .header__inner {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .header .menu__list, .header .contact {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    width: 320px;
+  }
+  .header {
+    padding: 16px 0;
+  }
+  .header .header__inner {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .header .menu__list, .header .contact {
+    display: none;
   }
 }
 .service__item, .first {
@@ -348,9 +378,15 @@ button {
   background-color: #188CE8;
 }
 
-@media (max-width: 480px) {
-  .container {
-    width: 450px;
+@media (max-width: 768px) {
+  .first {
+    padding: 180px 0;
+  }
+  .first__btn {
+    margin: 0;
+  }
+  .first__title {
+    margin: 0;
   }
   .first__title {
     font-size: 26px;
@@ -358,6 +394,12 @@ button {
     line-height: 42px;
     letter-spacing: 1.56px;
     width: 360px;
+  }
+}
+@media (max-width: 480px) {
+  .first__title {
+    font-size: 22px;
+    width: 320px;
   }
 }
 .advantages {
@@ -370,6 +412,7 @@ button {
   justify-content: center;
   gap: 30px;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .advantages__box .advantages-list__item {
   font-size: 14px;
@@ -381,8 +424,8 @@ button {
   align-items: flex-start;
   justify-content: center;
   gap: 10px;
-  flex-direction: row;
   flex-direction: column;
+  width: 270px;
 }
 .advantages__box .advantages-list__item::before {
   content: url(../icomoon/SVG/antenna.svg);
@@ -391,7 +434,7 @@ button {
   justify-content: center;
   gap: 0;
   flex-direction: row;
-  padding: 25px 0;
+  padding: 25px 100px;
   border-radius: 4px;
   background-color: #F5F4FA;
   margin-bottom: 30px;
@@ -417,15 +460,17 @@ button {
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
-
-@media (max-width: 768px) {
-  .advantages-list {
-    flex-wrap: wrap;
-  }
-  .advantages-list__item {
+@media (max-width: 1112px) {
+  .advantages .advantages-list__item {
     width: 354px;
   }
 }
+@media (max-width: 768px) {
+  .advantages .advantages-list__item {
+    width: 100%;
+  }
+}
+
 .service__item, .first {
   background-repeat: no-repeat;
   background-size: cover;
@@ -481,7 +526,7 @@ button {
   content: "Дизайнерські рішення";
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1112px) {
   .service {
     display: none;
   }
@@ -554,17 +599,26 @@ button {
   background-color: #2196F3;
 }
 
-@media (max-width: 768px) {
-  .team__content-box {
+@media (max-width: 1112px) {
+  .container .team__content-box {
     flex-wrap: wrap;
     margin-bottom: 120px;
   }
-  .team__img {
+  .container .team__img {
     width: 354px;
     height: 374px;
   }
-  .team__title {
+  .container .team__title {
     margin-bottom: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .team__item {
+    width: 290px;
+  }
+  .team__item .team__img {
+    height: 330px;
+    width: 320px;
   }
 }
 .first, .service__item {
@@ -619,7 +673,7 @@ button {
   fill: inherit;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1112px) {
   .clients-list {
     flex-direction: column;
     gap: 10px;
@@ -654,6 +708,13 @@ button {
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0 auto;
+}
+.footer__first-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  flex-direction: row;
 }
 .footer__info-box {
   display: flex;
@@ -780,12 +841,15 @@ button {
   background-color: rgb(7, 127, 224);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1112px) {
   .footer {
     width: 100%;
   }
-  .footer__inner {
+  .footer__first-box {
     gap: 165px;
+  }
+  .footer__inner {
+    gap: 60px;
     justify-content: center;
     flex-wrap: wrap;
   }
@@ -818,9 +882,18 @@ button {
     text-align: center;
   }
 }
-@media (max-width: 480px) {
-  .footer__inner {
+@media (max-width: 1112px) and (max-width: 768px) {
+  .footer__first-box {
     gap: 60px;
+    flex-direction: column;
+  }
+  .form__input {
+    width: 450px;
+  }
+}
+@media (max-width: 1112px) and (max-width: 480px) {
+  .form .form__input {
+    width: 290px;
   }
 }
 .no-scroll {
@@ -962,7 +1035,7 @@ button {
   background-image: url(../icomoon/SVG/phone-black-hover.svg);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1112px) {
   .modal {
     margin: 450px;
   }

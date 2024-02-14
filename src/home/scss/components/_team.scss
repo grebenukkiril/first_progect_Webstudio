@@ -45,16 +45,28 @@
         }
     }
 }
-@media (max-width:768px){
-    .team__content-box{
-        flex-wrap: wrap;
-        margin-bottom: 120px;
+@media (max-width:1112px){
+    .container{
+        .team__content-box{
+            flex-wrap: wrap;
+            margin-bottom: 120px;
+        }
+        .team__img{
+            width: 354px;
+            height: 374px;
+        }
+        .team__title{
+            margin-bottom: 30px;
+        }
+
     }
-    .team__img{
-        width: 354px;
-        height: 374px;
-    }
-    .team__title{
-        margin-bottom: 30px;
+}
+@media (max-width:480px){
+    .team__item{
+        width: 290px;
+        .team__img{
+            height: 330px;
+            width: 320px;
+        }
     }
 }

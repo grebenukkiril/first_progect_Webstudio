@@ -8,6 +8,9 @@
         flex-wrap: wrap;
         margin: 0 auto;
     }
+    &__first-box{
+        @include displayFlex ($gap: 70px, $alignItems: center, $justifiContent: center, $flexDirection: row);
+    }
     &__info-box {
         @include displayFlex ($gap: 20px, $alignItems: flex-start, $justifiContent: center, $flexDirection: column);
         .logo--white {
@@ -99,11 +102,14 @@
         }
     }   
 }
-@media (max-width:768px){
+@media (max-width:1112px){
     .footer {
+        &__first-box{
+            gap: 165px;
+        }
         width: 100%;
         &__inner {
-            gap: 165px;
+            gap: 60px;
             justify-content: center;
             flex-wrap: wrap;
         }
@@ -132,9 +138,20 @@
             }
       }        
     }
-}
-@media (max-width: 480px){
-    .footer__inner {
-        gap: 60px;
+    @media (max-width: 768px){
+        .footer__first-box{
+            gap: 60px;
+            flex-direction: column;
+        }
+        .form__input{
+            width: 450px;
+        }
+    }
+    @media (max-width: 480px){
+        .form{
+            .form__input{
+                width: 290px;
+            }
+        }
     }
 }
